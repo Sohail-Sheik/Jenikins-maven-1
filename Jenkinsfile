@@ -4,7 +4,7 @@ pipeline{
     stages{
         stage("clone the repo"){
             steps{
-                    checkout scmGit(branches: [[name: '*/master']], extensions: [], userRemoteConfigs: [[url: 'http://github.com/rajkiet2007/tarpeedo']]) 
+                    checkout scmGit(branches: [[name: '*/master']], extensions: [], userRemoteConfigs: [[url: 'https://github.com/Sohail-Sheik/Jenikins-maven-1']]) 
                 }
         }
         stage("mvn validate"){
